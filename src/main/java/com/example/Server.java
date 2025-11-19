@@ -16,11 +16,9 @@ public class Server
     int len = packet.getLength();
     String s = new String(buff, 0, len);
     System.out.println(s);
-    if(count==0) {
         System.out.println(packet.getAddress().getHostAddress());
         System.out.println(packet.getPort());
-    }
-            count++;
+
 
         }
     }

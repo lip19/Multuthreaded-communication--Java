@@ -20,6 +20,7 @@ public class Client {
             byte[] bytes = s.getBytes();
             DatagramPacket packet = new DatagramPacket(bytes, bytes.length, InetAddress.getLocalHost(), 6666);
             socket.send(packet);
+
         }
 
 
